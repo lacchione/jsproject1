@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${file.frontMatter.title}</title>
+  <link href="ui/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <img src="images/${file.frontMatter.banner}" alt="${file.frontMatter.title}" />
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="keyboards.html">Keyboards</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <article>
+    ${contents}
+  </article>
+  </main>
+  <footer>
+    <address>Luca's Hardware Store &#9400; - All Rights Reserved - LA Designs</address>
+</footer>
+</body>
+</html>
