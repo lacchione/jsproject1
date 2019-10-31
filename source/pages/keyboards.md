@@ -3,8 +3,6 @@ title: Luca's Gaming Hardware - Keyboards
 banner: banner2.jpg
 ---
 
-<body>
-
 # Our Products
 
 ## Razor Blackwidow Tournament Edition
@@ -23,6 +21,5 @@ The K70 LUX RGB has CHERRY® MX RGB Red switches backed by a lightweight aluminu
 
 ---
 
-</body>
 
 
