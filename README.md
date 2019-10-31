@@ -15,3 +15,9 @@ My first step is to access the changes I want to make to my website in terms of 
 
 INTRODUCTION OF FEATURE 1
 
+
+
+
+
+https://www.pinpng.com/
+- with respect to there rightful owners of Razor and Corsair
