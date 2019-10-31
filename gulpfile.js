@@ -17,7 +17,7 @@ function markdown() {
 exports.markdown = markdown; 
 
 function image() {
-    return src('source/images/*.jpg').pipe(dest('prod/images/'));
+    return src(['source/images/*.jpg', 'source/images/*.png']).pipe(dest('prod/images/'));
 }
 
 function css(){
@@ -34,7 +34,7 @@ function watch_task() {
 
     watch('source/ui/*.scss', series(css,reload));
     watch('source/pages/*.md', series(markdown,reload));
-    watch('source/images/*.jpg', series(image, reload));
+    watch(['source/images/*.jpg', 'source/images/*.png'], series(image, reload));
 }
 exports.watch = watch_task;
 
