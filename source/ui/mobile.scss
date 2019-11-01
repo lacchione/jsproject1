@@ -1,4 +1,11 @@
- /* Extra small devices (phones, 600px and down) */
+$font-color: white; 
+$base-color: #1A1A1D;
+$sec-color:  #4E4E50; 
+$button-color: #C3073F; 
+$outline-color: #950740; 
+$accent-color: #6F2232;
+
+
  @media only screen and (max-width: 600px) {
 
     header > img {
@@ -10,7 +17,6 @@
     }
 
     ul {
-
         margin-top: 4px;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -63,7 +69,6 @@
     }
 }
 
-    /* Medium devices (landscape tablets, 768px and below) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
 
     header > img {
