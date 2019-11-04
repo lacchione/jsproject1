@@ -1,14 +1,19 @@
-$font-main: Helvetica, sans-serif;
-$font-sec: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+$font-titles: 'Fredoka One', cursive;
+$font-sec: 'Ubuntu', sans-serif;
 $font-color: white; 
-$main-color: black;
-$sec-color:  grey; 
-$button-color: green; 
+$base-color: #1A1A1D;
+$sec-color:  #4E4E50; 
+$button-color: #C3073F; 
+$outline-color: #950740; 
+$accent-color: #6F2232;
 
 
 html {
 
-    background-color: $main-color;
+    background-color: $base-color;
     text-align: center; 
     color: $font-color; 
 
@@ -16,24 +21,39 @@ html {
 
 header > img {
 
-    width: 100%;
-    height: 380px;
-    border: 2px solid white; 
+    background-color: $accent-color;
+    padding: 4px;
+    width: 98%;
+    height: 330px;
+    border: 2px solid $sec-color; 
 }
 
 ul {
 
-    margin: 3%;
+    background-color: $accent-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 2px solid $sec-color;
+    font-family: $font-titles;
 
 }
+
 li {
 
     display: inline; 
     list-style-type: none;
     padding: 15px; 
     background-color: $button-color;
-    margin-right: 20px;
-    border: 2px solid white;
+    margin-right: 30px;
+    border: 2px solid $sec-color;
+}
+
+li:hover {
+
+    background-color: $outline-color;
+    border: 2px solid $button-color;
+    transition: ease-in-out 0.7s; 
+
 }
 
 a {
@@ -43,17 +63,75 @@ a {
 
 article {
 
-    margin-top: 3%;
+    margin-top: 2%;
     padding-bottom: 2%;
-    background-color: $sec-color;
-    border: 2px solid white; 
+    background-color: $accent-color;
+    border: 2px solid $sec-color; 
+    font-family: $font-sec;
+}
+
+article h1 {
+
+    font-family: $font-titles;
+}
+
+article h2 {
+
+    margin-top: 3%;
+
+}
+
+article h3 {
+
+    margin-bottom: 2px;
+}
+
+p > img {
+
+    width: 35%;
+    
+}
+
+p {
+
+    margin-top: 50px;
+    line-height: 1.4;
+    padding-left: 6%;
+    padding-right: 6%;
+
+}
+
+hr {
+
+    width: 85%;
+    border: 1px solid $sec-color;
+}
+
+button {
+
+    display: inline; 
+    list-style-type: none;
+    padding: 15px; 
+    background-color: $button-color;
+    margin-right: 20px;
+    border: 2px solid $sec-color;
+    font-size: 14px;
+    font-family: $font-titles;
+    color: $font-color;
+}
+
+button:hover {
+
+    background-color: $outline-color;
+    border: 2px solid $button-color;
+    transition: ease-in-out 0.7s; 
+
 }
 
 footer {
 
     margin-top: 1%; 
     padding: 18px;
-    border: 2px solid white; 
-    background-color: $sec-color;
+    border: 2px solid $sec-color; 
+    background-color: $accent-color;
 }
-

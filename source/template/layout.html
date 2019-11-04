@@ -5,13 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${file.frontMatter.title}</title>
+  <script src="ui/main.js" defer></script>
   <link href="ui/styles.css" rel="stylesheet" />
+  <link href="ui/mobile.css" rel="stylesheet" />
 </head>
 
 <body>
   <header>
     <img src="images/${file.frontMatter.banner}" alt="${file.frontMatter.title}" />
-    <nav>
+    <nav id ="mainNav">
       <ul>
         <li>
           <a href="index.html">Home</a>
@@ -19,13 +21,18 @@
         <li>
           <a href="keyboards.html">Keyboards</a>
         </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
       </ul>
     </nav>
   </header>
-  <article>
+  <article id="mainArticle">
     ${contents}
+    <p>Having Troubles Viewing the Page? Use the below buttons to help</p>
+    <button id="colorChange">More Contrast</button>
+    <button id="biggerFont">Bigger Font</button>
   </article>
-  </main>
   <footer>
     <address>Luca's Hardware Store &#9400; - All Rights Reserved - LA Designs</address>
 </footer>
